@@ -1,0 +1,28 @@
+<ion-view id="login" title="Login" hide-back-button="true">
+    <ion-content class="has-header" style="background: url(img/bg.jpg) no-repeat center;background-size:cover;" padding="true">
+        <form class="list">
+            <ion-list>
+			
+                <label class="item item-input">
+                    <span class="input-label">Jabber ID</span>
+                    <input ng-model="user.jid" placeholder="admin" type="text">
+                </label>
+                
+				<label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input ng-model="user.pass" placeholder="admin" type="password">
+                </label>
+                
+				<label class="item item-input">
+                    <span class="input-label">Host</span>
+                    <input ng-model="user.host" placeholder="localhost" type="text">
+                </label>
+            
+			</ion-list>
+            <div style="height: 40px;" class="spacer"></div>
+            
+			 <button  class="button button-assertive button-block"  id="login-button" ng-click="login(user)" >Log in</button>
+
+			</form>
+    </ion-content>
+</ion-view>
